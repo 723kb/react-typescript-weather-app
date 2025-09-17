@@ -10,9 +10,9 @@ type ResultsProps = {
 
 const Results = (props: ResultsProps) => {
   return (
-    <div>
+    <>
       {props.results.country && (
-        <div>
+        <>
           <div className="result-country">{props.results.country}</div>
           <div className="result-city">{props.results.cityName}</div>
           <div className="result-temp">
@@ -23,9 +23,9 @@ const Results = (props: ResultsProps) => {
             <img src={props.results.icon} alt="icon" />
             <span>{props.results.conditionText}</span>
           </div>
-        </div>
+        </>
       )}
-    </div>
+    </>
   );
 };
 
